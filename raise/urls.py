@@ -1,7 +1,7 @@
 from django.conf.urls import url
-
 from . import views
 
 urlpatterns = [
-    url(r'^hello/', views.index)
+    url(r'^stations/$', views.)
+    url(r'^gift/$', view.)
 ]
