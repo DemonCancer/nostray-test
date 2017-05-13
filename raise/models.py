@@ -5,6 +5,6 @@ from django.db import models
 
 # Create your models here.
 
-class station_name(models.Model):
+class Station_name(models.Model):
 	img = models.TextField(default='./pics/empty_img')
 	name = models.CharField(max_length=32, default="NULL")
