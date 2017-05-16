@@ -6,7 +6,6 @@ from django.db import models
 # Create your models here.
 
 class Station_name(models.Model):
-	img = models.TextField(default='./pics/empty_img')
 	name = models.CharField(max_length=32, default="NULL")
 	def __unicode__(self):
 		return self.name

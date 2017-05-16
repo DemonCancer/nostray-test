@@ -7,9 +7,8 @@ import models
 # Create your views here.
 
 def stat_list(request):
-	name = models.Station_name.objects.get(pk=1)
-	
-	return render(request, 'station_list.html', {'static':'.'}, {'name':name})
+	st_name = models.Station_name.objects.all()
+	return render(request, 'station_list.html', {'st_name':st_name})
 	#return response()
 def giveaway_list(request):
 	return render()
