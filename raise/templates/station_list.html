@@ -61,7 +61,7 @@
 	    	<div id="station_list_1" class="div_station_list">
 	    		<div class="div_station_list_img"></div>
 	    		<div class="div_station_list_span">
-	    		<a href=''>{{st_name.name}}</a></div>
+	    		<a href='{% url 'raise:station_info' stat_id.id %}'>{{st_name.name}}</a></div>
 	    	</div>
 	    	<div id="station_list_2" class="div_station_list">
 	    		<div class="div_station_list_img"></div>

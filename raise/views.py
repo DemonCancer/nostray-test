@@ -9,9 +9,12 @@ import models
 def stat_list(request):
 	st_name = models.Station_info.objects.get(pk=1)
 	return render(request, 'station_list.html', {'st_name':st_name})
-'''
+
 def stat_info(request, st_id):
-	st_id = models.Station_info
-	return render(request)
+	st_id = models.Station_info.objects.get(pk=1)
+	return render()
 	return response()
-'''
+
+def giveaway(request):
+	article = models.Give_away.objects.get(pk=1)
+	return render(request, 'giveaway_list.html', {'article':article})

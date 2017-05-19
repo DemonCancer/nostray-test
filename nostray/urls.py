@@ -18,6 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^raise/', include('raise.urls'))
-    #url(r'^register/$', include('register.urls'))
+    url(r'^raise/', include('raise.urls', namespace='raise')),
+    #url(r'^register/$', include('register.urls')),
+    url(r'^community/', include('community.urls', namespace='community')),
 ]
