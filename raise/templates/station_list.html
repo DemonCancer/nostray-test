@@ -53,7 +53,9 @@
         {% if request.user.is_authenticated %}
         	{{ request.user.username }}
         {% else %}
-        	xxx
+        <div class="div_login">
+        	<input type="button" id="btn_login" name="btn_login" class="btn_login" value="登录"/>
+        </div>
         {% endif %}
         </div>
     <div class="main">
@@ -61,7 +63,7 @@
 	    	<div id="station_list_1" class="div_station_list">
 	    		<div class="div_station_list_img"></div>
 	    		<div class="div_station_list_span">
-	    		<a href='{% url 'raise:station_info' stat_id.id %}'>{{st_name.name}}</a></div>
+	    		<a href=''>{{st_name.name}}</a></div>
 	    	</div>
 	    	<div id="station_list_2" class="div_station_list">
 	    		<div class="div_station_list_img"></div>

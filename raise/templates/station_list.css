@@ -34,6 +34,7 @@
 	float: left;
 }
 .div_nav{
+	
 	width:350px;
 	height:40px;
 	margin-left:100px;
@@ -42,7 +43,7 @@
 }
 .nav_ul{
 	padding-left:20px;
-	padding-top:11px;
+	padding-top:17px;
 	list-style:none;
 }
 li{
@@ -50,20 +51,25 @@ li{
 	float:left;
 }
 .div_login{
+	
 	width:60px;
 	height:40px;
-	margin-left:520px;
 	padding-top:9px;
-	float:left;
-	font-size:11px;
-}
-.div_register{
-	width:60px;
-	height:40px;
-	margin-right:65px;
-	padding-top:9px;
+	margin-right:100px;
 	float:right;
 	font-size:11px;
+}
+.btn_login{
+	width:60px;
+	height:25px;
+	color:#00F;
+	border:1px solid #00F;
+	background:white;
+	border-radius:4px;
+	font-weight:bolder;
+	line-height:normal;
+	cursor:pointer;
+	margin-top:5px;
 }
 .a_li{
 	color:#666;

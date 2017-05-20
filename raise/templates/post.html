@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>发帖界面</title>
+<link rel="stylesheet" type="text/css" href="post.css">
+<script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+
+<!-- 原始页面div -->
+<div class="wrap">
+
+	<!-- 头div，top -->
+  <div class="head">
+  
+  		<!-- logo图片超链接-->
+    	<div class="div_logo">
+        	<a class="a_logo" href="index.html">
+            	<img src="image/logo.png" style="max-width:120px; max-height:50px;" />
+            </a>
+        </div>
+        
+        <!--领养，社区，个人中心超链接，用排序横向排列  -->
+   		<div class="div_nav">
+        	<ul class="nav_ul">
+            	<li><a href="station_list.html" class="a_li">领养</a></li>
+                <li><a href="giveaway_list.html" class="a_li">社区</a></li>
+                <li><a href="#" class="a_li">个人中心</a></li>
+            </ul>
+        </div>
+    
+  </div>
+  
+  	<!-- 中间部分div -->
+    <div class="main">
+    	<div class="main_wrap">
+    		<div class="main_wrap_top">
+    			<div class="top_image">
+    			<img src="image/top_image.png" class="image"/>
+    			</div>
+    			<div class="top_file">
+    			<input type="file" name="top_file" id="top_file" class="file">
+    			</div>
+    		</div>
+    		<div class="main_wrap_middle">
+	    		<div class="middle_left">
+	    			<span class="span_title">标题</span>
+	    		</div>
+	    		<div class="middle_right">
+	    			<input type="text" class="middle_title" id="title" name="title"  placeholder="不超过20个字"/>
+	    		</div>
+    		</div>
+    		<div class="main_wrap_bottom">
+    			<div class="wrap_bottom">
+    				<textarea class="bottom_text" name="text" id="text"  rows="" cols=""></textarea>
+    			</div>
+    		</div>
+    		<div class="main_wrap_foot">
+    			<div class="wrap_foot_left">
+    				<input type="button" id="btn_send" name="btn_send" class="btn_send" value="发帖"/>
+    			</div>
+    			<div class="wrap_foot_right">
+    				<input type="button" id="btn_save" name="btn_save" class="btn_save" value="保存"/>
+    			</div>
+    		</div>
+   		</div>
+    
+    
+    
+    
+    
+    </div>
+    <!-- 底部部分div -->
+    <div class="foot"></div>
+    
+</div>
+
+</body>
+</html>
