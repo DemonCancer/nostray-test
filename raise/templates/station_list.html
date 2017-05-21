@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <title>救助站</title>
-<link rel="stylesheet" type="text/css" href="{% static 'css/station_list.cs' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/station_list.css' %}">
 <style type="text/css">
 
 .top,.mid,.down{
@@ -42,7 +42,7 @@
   <div class="head">
     	<div class="div_logo">
         	<a class="a_logo">
-            	<img src="{{ STATIC_URL }}images/logo.png" style="max-width:120px; max-height:50px;" />
+            	<img src="{% static 'images/logo.png' %}" style="max-width:120px; max-height:50px;" />
             </a>
         </div>
    	<div class="div_nav">
