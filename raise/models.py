@@ -6,7 +6,7 @@ from django.db import models
 # Create your models here.
 
 class Station_info(models.Model):
-	icon = models.CharField(max_length=64, default="NULL")
+	icon = models.TextField(default="NULL")
 	name = models.CharField(max_length=32, default="NULL")
 	number = models.CharField(max_length=16, default='0')
 
@@ -15,6 +15,8 @@ class Station_info(models.Model):
 		return self.icon
 		return self.number
 
+#class Animal_info(models.Model):
+#	icon = models.TextField(defualt="NULL")
 
 class Give_away(models.Model):
 	title = models.CharField(max_length=64)

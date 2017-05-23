@@ -42,13 +42,13 @@
   <div class="head">
     	<div class="div_logo">
         	<a class="a_logo">
-            	<img src="{% static 'images/logo.png' %}" style="max-width:120px; max-height:50px;" />
+            	<img src="{% static 'img/logo.png' %}" style="max-width:120px; max-height:50px;" />
             </a>
         </div>
    	<div class="div_nav">
         	<ul class="nav_ul">
             	<li><a href="#" class="a_li">领养</a></li>
-                <li><a href="#" class="a_li">社区</a></li>
+                <li><a href="{% url 'community:all_posts' %}" class="a_li">社区</a></li>
                 <li><a href="#" class="a_li">个人中心</a></li>
             </ul>
         </div>
@@ -62,11 +62,13 @@
         </div>
     <div class="main">
 	    <div class="top">
+	    
 	    	<div id="station_list_1" class="div_station_list">
 	    		<div class="div_station_list_img"></div>
 	    		<div class="div_station_list_span">
 	    		<a href=''>{{st_name.name}}</a></div>
 	    	</div>
+	    
 	    	<div id="station_list_2" class="div_station_list">
 	    		<div class="div_station_list_img"></div>
 	    		<div class="div_station_list_span"><a href=''></a></div>
@@ -90,6 +92,7 @@
 	    		<div class="div_station_list_span"></div>
 	    	</div>
 	    </div>
+	    
 	    <div class="down">
 	   		 <div id="station_list_7" class="div_station_list">
 	    		<div class="div_station_list_img"></div>

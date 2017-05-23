@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>发帖界面</title>
 <link rel="stylesheet" type="text/css" href="post_on_com.css">
-<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="{% static 'js/login.js' %}"></script>
 </head>
 <body>
 
@@ -17,16 +18,16 @@
   		<!-- logo图片超链接-->
     	<div class="div_logo">
         	<a class="a_logo" href="index.html">
-            	<img src="image/logo.png" style="max-width:120px; max-height:50px;" />
+            	<img src="{% static 'img/logo.png' %}" style="max-width:120px; max-height:50px;" />
             </a>
         </div>
         
         <!--领养，社区，个人中心超链接，用排序横向排列  -->
    		<div class="div_nav">
         	<ul class="nav_ul">
-            	<li><a href="station_list.html" class="a_li">领养</a></li>
-                <li><a href="giveaway_list.html" class="a_li">社区</a></li>
-                <li><a href="#" class="a_li">个人中心</a></li>
+            	<li><a href="{}" class="a_li">领养</a></li>
+                <li><a href="{}" class="a_li">社区</a></li>
+                <li><a href="{}" class="a_li">个人中心</a></li>
             </ul>
         </div>
     
@@ -37,7 +38,7 @@
     	<div class="main_wrap">
     		<div class="main_wrap_top">
     			<div class="top_image">
-    			<img src="top_image.png" class="image"/>
+    			<img src="{% static 'img/top_image.png' %}" class="image"/>
     			</div>
     			<div class="top_file">
     			<input type="file" name="top_file" id="top_file" class="file">
