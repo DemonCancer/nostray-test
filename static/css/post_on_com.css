@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+﻿@CHARSET "UTF-8";
 div{
 	border:0px solid black;
 }
@@ -19,9 +19,7 @@ div{
 	margin-top:7px;
 }
 
-/*中间体宽度100%，高度700px,
-元素溢出时隐藏hidden,默认值visible,scoll被修剪但显示滚动框，
-auto如果内容被修剪就显示滚动框*/
+
 .main{
 	width:100%;
 	height:1000px;
