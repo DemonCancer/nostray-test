@@ -5,7 +5,7 @@ from django.db import models
 
 # Create your models here.
 
-class All_articles(models.Model):
+class article(models.Model):
 	title = models.CharField(max_length=64)
 	content = models.TextField()
 

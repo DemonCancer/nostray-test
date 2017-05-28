@@ -9,9 +9,16 @@ from . import models
 # Create your views here.
 
 def all(request):
-	articles = models.All_articles.objects.all()
-	return render(request, 'community_all.html')
+	articles = models.article.objects.all()
+	return render(request, 'all_posts.html')
 
 def post(request):
 	
 	return render(request, 'post_on_com.html')
+
+def edit_action(request):
+	title = request.POST.get('title', 'TITLE')
+	content = request.POST.get('content', 'CONTENT')
+	models.article.objects.create(title=title, content=content)
+	articles = models.article.objects.all()
+	return render(request, 'all_posts.html', {'articles':articles})
