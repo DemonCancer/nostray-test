@@ -87,7 +87,7 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nostray',
+        'NAME': 'nostray_test',
         'USER': 'root',
         'PASSWORD': '0609',
         'HOST': '127.0.0.1',
